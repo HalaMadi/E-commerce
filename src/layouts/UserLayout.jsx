@@ -1,8 +1,12 @@
-import React from 'react'
+import { Outlet } from 'react-router-dom'
+import CustomNavbar from '../components/user/navbar/CustomNavbar'
 
 const UserLayout = () => {
   return (
-    <div>UserLayout</div>
+    <div>
+      <CustomNavbar/>
+      <Outlet/>
+      </div>
   )
 }
 

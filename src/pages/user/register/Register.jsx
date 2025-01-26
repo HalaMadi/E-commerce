@@ -18,6 +18,7 @@ const Register = () => {
     try {
       const response = await axios.post(`https://ecommerce-node4.onrender.com/auth/signup`, value);
       if (response.status === 201) {
+        localStorage.setItem("userToken",response.data.token)
         toast.success('Confirm your email please!', {
           position: "bottom-center",
           autoClose: 2000,
