@@ -9,6 +9,8 @@ import UserLayout from './layouts/UserLayout'
 import Category from './pages/user/category/Category'
 import Products from './pages/user/products/Products'
 import Home from './pages/user/home/Home'
+import CategoryProduct from './pages/user/category/CategoryProduct'
+import ProductDetails from './pages/user/products/ProductDetails'
 
 const App = () => {
   const router = createBrowserRouter([
@@ -35,12 +37,20 @@ const App = () => {
           element: <Home/>
         },
         {
-          path: '/category',
+          path: '/categories',
           element: <Category />
+        },
+        {
+          path: '/categories/:categoryId',
+          element: <CategoryProduct />
         },
         {
           path: '/products',
           element: <Products />
+        },
+        {
+          path: '/products/:productId',
+          element: <ProductDetails />
         }
       ]
     },

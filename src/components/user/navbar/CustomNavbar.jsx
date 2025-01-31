@@ -11,7 +11,7 @@ const CustomNavbar = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link as={Link} to={'/category'}>Category</Nav.Link>
+              <Nav.Link as={Link} to={'/categories'}>Categories</Nav.Link>
               <Nav.Link as={Link} to={'/products'}>Products</Nav.Link>
             </Nav>
           </Navbar.Collapse>
