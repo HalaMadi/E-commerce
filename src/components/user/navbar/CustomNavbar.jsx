@@ -13,6 +13,7 @@ const CustomNavbar = () => {
             <Nav className="ms-auto">
               <Nav.Link as={Link} to={'/categories'}>Categories</Nav.Link>
               <Nav.Link as={Link} to={'/products'}>Products</Nav.Link>
+              <Nav.Link as={Link} to={'/cart'}>Cart</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

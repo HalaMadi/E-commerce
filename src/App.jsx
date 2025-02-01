@@ -11,6 +11,7 @@ import Products from './pages/user/products/Products'
 import Home from './pages/user/home/Home'
 import CategoryProduct from './pages/user/category/CategoryProduct'
 import ProductDetails from './pages/user/products/ProductDetails'
+import Cart from './pages/user/cart/Cart'
 
 const App = () => {
   const router = createBrowserRouter([
@@ -51,6 +52,10 @@ const App = () => {
         {
           path: '/products/:productId',
           element: <ProductDetails />
+        },
+        {
+          path:'cart',
+          element:<Cart/>
         }
       ]
     },
